@@ -1,9 +1,9 @@
 <h1>Edit <%= @venture_bro["character"] %>,  <%= @venture_bro["id"] %></h1>
 
-<%= form_tag "/venture_bros/#{@venture_bro['id']}", method: :patch do %>
-  Char: <input type="text" name="character" value="<%= @venture_bro['character'] %>">
-  Vehicle: <input type="text" name="vehicle" value="<%= @venture_bro['vehicle'] %>">
-  Org: <input type="text" name="organization" value="<%= @venture_bro['organization'] %>">
-  Quote: <input type="text" name="quote" value="<%= @venture_bro['quote'] %>">
+<%= form_tag "/venture_bros/#{@venture_bro.id}", method: :patch do %>
+  Char: <input type="text" name="character" value="<%= @venture_bro.character %>">
+  Vehicle: <input type="text" name="vehicle" value="<%= @venture_bro.vehicle %>">
+  Org: <input type="text" name="organization" value="<%= @venture_bro.organization %>">
+  Quote: <input type="text" name="quote" value="<%= @venture_bro.quote %>">
   <input type="submit" value="Submit">
 <% end %>

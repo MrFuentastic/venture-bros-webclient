@@ -1,10 +1,10 @@
 <h1>Stuff</h1>
 
 <% @venture_bros.each do |vb| %>
-  <h4><a href="/venture_bros/<%= vb['id'] %>"><%= vb['character'] %></a></h4>
-  <h4><%= vb['vehicle'] %></h4>
-  <h4><%= vb['organization'] %></h4>
-  <h4><%= vb['quote'] %></h4>
+  <h4><a href="/venture_bros/<%= vb.id %>"><%= vb.character %></a></h4>
+  <h4><%= vb.vehicle %></h4>
+  <h4><%= vb.organization %></h4>
+  <h4><%= vb.always_yelling %></h4>
   <br>
 <% end %>
 
